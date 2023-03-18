@@ -4,6 +4,10 @@ h2 + ul {
   margin-top: var(--space-m);
 }
 
+mark {
+  background-color: var(--color-yellow);
+}
+
 label {
   display: block;
   font-weight: 700;
