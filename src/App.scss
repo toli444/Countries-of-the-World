@@ -1,3 +1,50 @@
-.test {
-  background-color: indianred;
+@import "./base";
+
+h2 + ul {
+  margin-top: var(--space-m);
 }
+
+label {
+  display: block;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.main {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li + li {
+    margin-top: var(--space-m-l);
+  }
+}
+
+.repo-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: var(--space-xs-s);
+  border: var(--border-thin) solid var(--color-dark);
+  gap: 16px;
+
+  dt {
+    justify-self: end;
+    font-weight: bold;
+  }
+}
+
+.filter-panel {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+header,
+.results,
+.filter-panel-content {
+  max-width: 900px;
+  padding: var(--space-m-l);
+  margin-right: auto;
+  margin-left: auto;
+}
+
