@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
-import useFetch from "../hooks/useFetch";
+import { useRouteLoaderData } from "react-router-dom";
 
-interface Post {
+interface Repo {
     name: string,
     owner: string,
     languages: string[]
 }
 
-interface ReposResponse {
-    repositories: Post[]
+interface ReposData {
+    repositories: Repo[]
 }
 
 function getHighlightedText(text: string, highlight: string) {
@@ -25,19 +25,25 @@ function getHighlightedText(text: string, highlight: string) {
 }
 
 function Main() {
-    const {response: reposData, error, isLoading} = useFetch<ReposResponse>('./api/repos.json');
+    const { repositories } = useRouteLoaderData('root') as ReposData;
     const [ownerFilter, setOwnerFilter] = useState('');
 
     return (
         <main className="main">
             <form className="filter-panel">
                 <div className="filter-panel-content">
-                    <input type="text" placeholder="Filter by owner" onChange={e => setOwnerFilter(e.target.value)}/>
+                    <label htmlFor="filter-by-owner-input">Filter by owner</label>
+                    <input
+                        id="filter-by-owner-input"
+                        type="text"
+                        placeholder="type query"
+                        onChange={e => setOwnerFilter(e.target.value)}
+                    />
                 </div>
             </form>
             <div className="results">
-                {isLoading ? "Loading..." : (reposData?.repositories?.length || null) && <ul>
-                    {reposData?.repositories.filter(repo => {
+                {repositories?.length && <ul>
+                    {repositories.filter(repo => {
                         return repo.owner.includes(ownerFilter);
                     }).map(repo => (
                         <li key={repo.name}>

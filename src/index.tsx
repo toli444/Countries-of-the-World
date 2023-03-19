@@ -1,15 +1,43 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './styles/index.scss';
+import Root from "./routes/root";
+import ErrorPage from "./routes/error";
+import Repositories from "./routes/repositories";
+import RepositoriesPerOwner from "./routes/repositories-per-owner";
 import reportWebVitals from './reportWebVitals';
+import {
+    createBrowserRouter,
+    RouterProvider,
+} from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Root />,
+        errorElement: <ErrorPage />,
+        id: "root",
+        loader: () => fetch("/api/repos.json"),
+        children: [
+            {
+                path: "/",
+                element: <Repositories />
+            },
+            {
+                path: "per-owner",
+                element: <RepositoriesPerOwner />
+            }
+        ],
+    },
+]);
+
 root.render(
   <React.StrictMode>
-    <App />
+      <RouterProvider router={router} />
   </React.StrictMode>
 );
 

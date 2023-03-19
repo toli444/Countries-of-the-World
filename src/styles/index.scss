@@ -1,4 +1,4 @@
-@import "./base";
+@import "./base.scss";
 
 h2 + ul {
   margin-top: var(--space-m);
@@ -14,15 +14,8 @@ label {
   font-family: var(--font-mono);
 }
 
-.main {
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  li + li {
-    margin-top: var(--space-m-l);
-  }
+ul {
+  list-style: none;
 }
 
 .repo-info {
@@ -44,6 +37,8 @@ label {
 }
 
 header,
+footer,
+nav,
 .results,
 .filter-panel-content {
   max-width: 900px;
@@ -51,4 +46,30 @@ header,
   margin-right: auto;
   margin-left: auto;
 }
+
+header {
+  padding-bottom: 0;
+}
+
+nav {
+  padding-top: var(--space-xs-s);
+  padding-bottom: var(--space-xs-s);
+
+  ul {
+    display: inline-flex;
+    gap: 16px;
+    margin-left: 16px;
+  }
+
+  a.active{
+    background: var(--color-yellow);
+  }
+}
+
+.results {
+  li + li {
+    margin-top: var(--space-m-l);
+  }
+}
+
 
