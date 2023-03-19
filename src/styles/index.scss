@@ -48,6 +48,10 @@ nav {
     margin-left: 16px;
   }
 
+  a {
+    padding: 3px;
+  }
+
   a.active{
     background: var(--color-yellow);
   }
