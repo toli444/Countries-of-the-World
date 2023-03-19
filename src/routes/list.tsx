@@ -45,11 +45,11 @@ function List() {
                         <li key={repo.name}>
                             <dl className="repository-info">
                                 <dt>Name</dt>
-                                <dd>{repo.name}</dd>
+                                <dd data-testid="repo-name">{repo.name}</dd>
                                 <dt>Owner</dt>
-                                <dd>{getHighlightedText(repo.owner, ownerFilter)}</dd>
+                                <dd data-testid="repo-owner">{getHighlightedText(repo.owner, ownerFilter)}</dd>
                                 <dt>Languages</dt>
-                                <dd>{repo.languages.join(', ')}</dd>
+                                <dd data-testid="repo-languages">{repo.languages.join(', ')}</dd>
                             </dl>
                         </li>
                     ))}

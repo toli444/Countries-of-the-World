@@ -17,14 +17,17 @@ function Grouped() {
     const groupedFilteredRepositories = groupBy(filteredRepositories, 'owner');
 
     return (
-        <main className="main">
+        <main>
             <form className="filter-panel">
                 <div className="filter-panel-content">
-                    <label htmlFor="filter-by-owner-input">Filter by language</label>
-                    <select value={languageFilter} onChange={e => {
-                        setLanguageFilter(e.target.value);
-                        setSearchParams({ lang: e.target.value})
-                    }}>
+                    <label htmlFor="filter-by-language-select">Filter by language</label>
+                    <select
+                        id="filter-by-language-select"
+                        value={languageFilter} onChange={e => {
+                            setLanguageFilter(e.target.value);
+                            setSearchParams({ lang: e.target.value})
+                        }}
+                    >
                         <option value="">Choose a language</option>
                         {languages.map(l => (
                             <option key={l} value={l}>{l}</option>
@@ -35,7 +38,7 @@ function Grouped() {
             <div className="repositories-list">
                 {Object.entries(groupedFilteredRepositories).map(([owner, ownerRepositories]) => (
                     <section key={owner} className="owner-repositories">
-                        <h2 className="owner-name">
+                        <h2 className="owner-name" data-testid="repo-owner">
                             <span className="screen-reader-text">Owner: </span>
                             {owner}
                         </h2>
@@ -44,9 +47,9 @@ function Grouped() {
                                 <li key={repo.name}>
                                     <dl className="repository-info">
                                         <dt>Name</dt>
-                                        <dd>{repo.name}</dd>
+                                        <dd data-testid="repo-name">{repo.name}</dd>
                                         <dt>Languages</dt>
-                                        <dd>{repo.languages.join(', ')}</dd>
+                                        <dd data-testid="repo-languages">{repo.languages.join(', ')}</dd>
                                     </dl>
                                 </li>
                             ))}

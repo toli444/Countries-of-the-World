@@ -13,7 +13,7 @@ export default function ErrorPage() {
     const error = useRouteError();
 
     return (
-        <>
+        <main className="page-error">
             <h1>Oops!</h1>
             <p>Sorry, an unexpected error has occurred.</p>
             {typeof error === 'object' && error !== null && (
@@ -21,6 +21,6 @@ export default function ErrorPage() {
                     <i>{error.statusText || error.message}</i>
                 </p>
             )}
-        </>
+        </main>
     );
 }
