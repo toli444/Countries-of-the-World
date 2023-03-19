@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.scss';
 import Root from "./routes/root";
 import ErrorPage from "./routes/error";
-import Repositories from "./routes/repositories";
-import RepositoriesPerOwner from "./routes/repositories-per-owner";
+import List from "./routes/list";
+import Grouped from "./routes/grouped";
 import reportWebVitals from './reportWebVitals';
 import {
     createBrowserRouter,
@@ -25,11 +25,11 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Repositories />
+                element: <List />
             },
             {
-                path: "per-owner",
-                element: <RepositoriesPerOwner />
+                path: "by-owner",
+                element: <Grouped />
             }
         ],
     },

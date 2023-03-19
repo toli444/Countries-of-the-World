@@ -7,13 +7,13 @@ function Root() {
             <h1>Repositories</h1>
         </header>
         <nav>
-            Show as:
+            View:
             <ul>
                 <li>
                     <NavLink to={`/`}>List</NavLink>
                 </li>
                 <li>
-                    <NavLink to={`/per-owner`}>Grouped</NavLink>
+                    <NavLink to={`/by-owner`}>Grouped</NavLink>
                 </li>
             </ul>
         </nav>

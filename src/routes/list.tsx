@@ -15,7 +15,7 @@ function getHighlightedText(text: string, highlight: string) {
     ));
 }
 
-function Repositories() {
+function List() {
     const { repositories } = useRouteLoaderData('root') as RepositoriesData;
     const [searchParams, setSearchParams] = useSearchParams();
     const [ownerFilter, setOwnerFilter] = useState(searchParams.get('owner') || '');
@@ -59,4 +59,4 @@ function Repositories() {
     );
 }
 
-export default Repositories;
+export default List;

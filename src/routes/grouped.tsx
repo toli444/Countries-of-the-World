@@ -3,7 +3,7 @@ import {useRouteLoaderData, useSearchParams} from "react-router-dom";
 import {RepositoriesData} from "../types/Repository";
 import groupBy from "lodash.groupby";
 
-function RepositoriesPerOwner() {
+function Grouped() {
     const [searchParams, setSearchParams] = useSearchParams();
     const [languageFilter, setLanguageFilter] = useState(searchParams.get('lang') || '');
     const {repositories} = useRouteLoaderData('root') as RepositoriesData;
@@ -58,4 +58,4 @@ function RepositoriesPerOwner() {
     );
 }
 
-export default RepositoriesPerOwner;
+export default Grouped;
