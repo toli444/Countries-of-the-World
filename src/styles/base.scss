@@ -163,30 +163,44 @@ h4 {
 }
 
 h1 {
-  font-size:var(--s4)
+  font-size:var(--s4);
 }
 
 h2 {
-  font-size:var(--s3)
+  font-size:var(--s3);
 }
 
 h3 {
-  font-size:var(--s2)
+  font-size:var(--s2);
 }
 
 h4 {
-  font-size:var(--s1)
+  font-size:var(--s1);
 }
 
-input {
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+  background-color: var(--color-light);
+}
+
+input,
+select {
   box-shadow:inset .25rem .25rem 0 #ddd
 }
 
-input:focus {
+input:focus,
+select:focus {
   outline-offset:0
 }
 
-input[type="text"] {
+input[type="text"],
+select {
   width: 100%;
   font-size: inherit;
   font-family: var(--font-mono);
@@ -194,4 +208,17 @@ input[type="text"] {
   border: var(--border-thick) solid;
   background-color: inherit;
   padding: var(--s-1);
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
 }

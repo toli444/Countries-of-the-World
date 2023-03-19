@@ -72,4 +72,21 @@ nav {
   }
 }
 
+.owner-repositories {
+  li + li {
+    margin-top: var(--space-s-m);
+  }
+}
+
+.owner-repositories + .owner-repositories {
+  margin-top: var(--space-m-l);
+}
+
+.owner-name {
+  font-size: var(--s1);
+
+  + ul {
+    margin-top: var(--space-s);
+  }
+}
 
