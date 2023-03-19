@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useMemo} from 'react';
 import {useRouteLoaderData} from "react-router-dom";
 import {RepositoriesData} from "../types/Repository";
 import groupBy from "lodash.groupby";
@@ -6,11 +6,14 @@ import groupBy from "lodash.groupby";
 function RepositoriesPerOwner() {
     const [languageFilter, setLanguageFilter] = useState('');
     const {repositories} = useRouteLoaderData('root') as RepositoriesData;
+    const languages = useMemo(
+        () => Array.from(new Set(repositories.flatMap(r => r.languages))),
+        [repositories]
+    );
     const filteredRepositories = languageFilter ?
         repositories.filter(r => r.languages.includes(languageFilter)) :
         repositories;
     const groupedFilteredRepositories = groupBy(filteredRepositories, 'owner');
-    const languages = Array.from(new Set(repositories.flatMap(r => r.languages)));
 
     return (
         <main className="main">
