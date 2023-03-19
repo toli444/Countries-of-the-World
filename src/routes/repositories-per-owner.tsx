@@ -1,10 +1,11 @@
 import React, {useState, useMemo} from 'react';
-import {useRouteLoaderData} from "react-router-dom";
+import {useRouteLoaderData, useSearchParams} from "react-router-dom";
 import {RepositoriesData} from "../types/Repository";
 import groupBy from "lodash.groupby";
 
 function RepositoriesPerOwner() {
-    const [languageFilter, setLanguageFilter] = useState('');
+    const [searchParams, setSearchParams] = useSearchParams();
+    const [languageFilter, setLanguageFilter] = useState(searchParams.get('lang') || '');
     const {repositories} = useRouteLoaderData('root') as RepositoriesData;
     const languages = useMemo(
         () => Array.from(new Set(repositories.flatMap(r => r.languages))),
@@ -20,7 +21,10 @@ function RepositoriesPerOwner() {
             <form className="filter-panel">
                 <div className="filter-panel-content">
                     <label htmlFor="filter-by-owner-input">Filter by language</label>
-                    <select value={languageFilter} onChange={e => setLanguageFilter(e.target.value)}>
+                    <select value={languageFilter} onChange={e => {
+                        setLanguageFilter(e.target.value);
+                        setSearchParams({ lang: e.target.value})
+                    }}>
                         <option value="">Choose a language</option>
                         {languages.map(l => (
                             <option key={l} value={l}>{l}</option>

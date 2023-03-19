@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { useRouteLoaderData } from "react-router-dom";
+import { useRouteLoaderData, useSearchParams } from "react-router-dom";
 import {RepositoriesData} from "../types/Repository";
 
 function getHighlightedText(text: string, highlight: string) {
@@ -17,7 +17,8 @@ function getHighlightedText(text: string, highlight: string) {
 
 function Repositories() {
     const { repositories } = useRouteLoaderData('root') as RepositoriesData;
-    const [ownerFilter, setOwnerFilter] = useState('');
+    const [searchParams, setSearchParams] = useSearchParams();
+    const [ownerFilter, setOwnerFilter] = useState(searchParams.get('owner') || '');
 
     return (
         <main className="main">
@@ -28,7 +29,11 @@ function Repositories() {
                         id="filter-by-owner-input"
                         type="text"
                         placeholder="type query"
-                        onChange={e => setOwnerFilter(e.target.value)}
+                        value={ownerFilter}
+                        onChange={e => {
+                            setOwnerFilter(e.target.value);
+                            setSearchParams({ owner: e.target.value });
+                        }}
                     />
                 </div>
             </form>
