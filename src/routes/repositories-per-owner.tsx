@@ -1,25 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useRouteLoaderData} from "react-router-dom";
 import {RepositoriesData} from "../types/Repository";
 import groupBy from "lodash.groupby";
 
 function RepositoriesPerOwner() {
+    const [languageFilter, setLanguageFilter] = useState('');
     const {repositories} = useRouteLoaderData('root') as RepositoriesData;
-    const groupedRepositories = groupBy(repositories, 'owner');
+    const filteredRepositories = languageFilter ?
+        repositories.filter(r => r.languages.includes(languageFilter)) :
+        repositories;
+    const groupedFilteredRepositories = groupBy(filteredRepositories, 'owner');
+    const languages = Array.from(new Set(repositories.flatMap(r => r.languages)));
 
     return (
         <main className="main">
             <form className="filter-panel">
                 <div className="filter-panel-content">
                     <label htmlFor="filter-by-owner-input">Filter by language</label>
-                    <select>
+                    <select value={languageFilter} onChange={e => setLanguageFilter(e.target.value)}>
                         <option value="">Choose a language</option>
-                        <option value="dog">Scala</option>
+                        {languages.map(l => (
+                            <option key={l} value={l}>{l}</option>
+                        ))}
                     </select>
                 </div>
             </form>
             <div className="results">
-                {Object.entries(groupedRepositories).map(([owner, ownerRepositories]) => (
+                {Object.entries(groupedFilteredRepositories).map(([owner, ownerRepositories]) => (
                     <section key={owner} className="owner-repositories">
                         <h2 className="owner-name">
                             <span className="screen-reader-text">Owner: </span>
