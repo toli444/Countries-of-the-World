@@ -32,7 +32,7 @@ function Grouped() {
                     </select>
                 </div>
             </form>
-            <div className="results">
+            <div className="repositories-list">
                 {Object.entries(groupedFilteredRepositories).map(([owner, ownerRepositories]) => (
                     <section key={owner} className="owner-repositories">
                         <h2 className="owner-name">
@@ -42,7 +42,7 @@ function Grouped() {
                         <ul>
                             {ownerRepositories.map(repo => (
                                 <li key={repo.name}>
-                                    <dl className="repo-info">
+                                    <dl className="repository-info">
                                         <dt>Name</dt>
                                         <dd>{repo.name}</dd>
                                         <dt>Languages</dt>

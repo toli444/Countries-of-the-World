@@ -37,13 +37,13 @@ function List() {
                     />
                 </div>
             </form>
-            <div className="results">
+            <div className="repositories-list">
                 <ul>
                     {repositories.filter(repo => {
                         return repo.owner.includes(ownerFilter);
                     }).map(repo => (
                         <li key={repo.name}>
-                            <dl className="repo-info">
+                            <dl className="repository-info">
                                 <dt>Name</dt>
                                 <dd>{repo.name}</dd>
                                 <dt>Owner</dt>

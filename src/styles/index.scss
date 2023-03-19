@@ -18,19 +18,6 @@ ul {
   list-style: none;
 }
 
-.repo-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: var(--space-xs-s);
-  border: var(--border-thin) solid var(--color-dark);
-  gap: 16px;
-
-  dt {
-    justify-self: end;
-    font-weight: bold;
-  }
-}
-
 .filter-panel {
   background-color: var(--color-dark);
   color: var(--color-light);
@@ -39,7 +26,7 @@ ul {
 header,
 footer,
 nav,
-.results,
+.repositories-list,
 .filter-panel-content {
   max-width: 900px;
   padding: var(--space-m-l);
@@ -66,7 +53,20 @@ nav {
   }
 }
 
-.results {
+.repository-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: var(--space-xs-s);
+  border: var(--border-thin) solid var(--color-dark);
+  gap: 16px;
+
+  dt {
+    justify-self: end;
+    font-weight: bold;
+  }
+}
+
+.repositories-list {
   li + li {
     margin-top: var(--space-m-l);
   }
