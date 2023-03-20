@@ -19,6 +19,7 @@ function List() {
     const { repositories } = useRouteLoaderData('root') as RepositoriesData;
     const [searchParams, setSearchParams] = useSearchParams();
     const [ownerFilter, setOwnerFilter] = useState(searchParams.get('owner') || '');
+    const filteredRepositories = repositories.filter(repo => repo.owner.includes(ownerFilter));
 
     return (
         <main className="main">
@@ -38,22 +39,24 @@ function List() {
                 </div>
             </form>
             <div className="repositories-list">
-                <ul>
-                    {repositories.filter(repo => {
-                        return repo.owner.includes(ownerFilter);
-                    }).map(repo => (
-                        <li key={repo.name}>
-                            <dl className="repository-info">
-                                <dt>Name</dt>
-                                <dd data-testid="repo-name">{repo.name}</dd>
-                                <dt>Owner</dt>
-                                <dd data-testid="repo-owner">{getHighlightedText(repo.owner, ownerFilter)}</dd>
-                                <dt>Languages</dt>
-                                <dd data-testid="repo-languages">{repo.languages.join(', ')}</dd>
-                            </dl>
-                        </li>
-                    ))}
-                </ul>
+                {filteredRepositories.length ? (
+                    <ul>
+                        {filteredRepositories.map(repo => (
+                            <li data-testid="repo-info" key={repo.name}>
+                                <dl className="repository-info">
+                                    <dt>Name</dt>
+                                    <dd data-testid="repo-name">{repo.name}</dd>
+                                    <dt>Owner</dt>
+                                    <dd data-testid="repo-owner">{getHighlightedText(repo.owner, ownerFilter)}</dd>
+                                    <dt>Languages</dt>
+                                    <dd data-testid="repo-languages">{repo.languages.join(', ')}</dd>
+                                </dl>
+                            </li>
+                        ))}
+                    </ul>
+                ) : <p data-testid="no-results-message">
+                    No repositories match the specified owner name
+                </p>}
             </div>
         </main>
     );

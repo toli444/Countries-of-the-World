@@ -21,7 +21,15 @@ const router = createBrowserRouter([
         element: <Root />,
         errorElement: <ErrorPage />,
         id: "root",
-        loader: () => fetch("/api/repos.json"),
+        loader: async () => {
+            const res = await fetch("/api/repos.json")
+
+            if (!res.ok) {
+                throw new Error("Couldn't load repositories");
+            }
+
+            return res;
+        },
         children: [
             {
                 path: "/",

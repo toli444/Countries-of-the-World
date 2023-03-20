@@ -17,7 +17,7 @@ export default function ErrorPage() {
             <h1>Oops!</h1>
             <p>Sorry, an unexpected error has occurred.</p>
             {typeof error === 'object' && error !== null && (
-                <p>
+                <p data-testid="error">
                     <i>{error.statusText || error.message}</i>
                 </p>
             )}
