@@ -45,6 +45,6 @@ describe('General', () => {
   it('handles 404', () => {
     cy.visit('/random');
     cy.get('h1').should('contain', 'Oops!');
-    cy.get('[data-testid="error"').should('contain.text', 'Not found');
+    cy.get('[data-testid="error"').should('contain.text', 'Not Found');
   });
 });
