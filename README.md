@@ -1,5 +1,7 @@
 # Repositories Display App
 
+Web app that allows you to view repositories with their owners and applied languages and to filter the shown repos by either owner or applied language.
+
 ## Getting started
 
 1. Run `npm install` to install packages.
