@@ -1,6 +1,6 @@
 {
-  "short_name": "Repo analyzer",
-  "name": "Repo analyzer",
+  "short_name": "Repos display",
+  "name": "Repositories display",
   "icons": [
     {
       "src": "favicon.ico",

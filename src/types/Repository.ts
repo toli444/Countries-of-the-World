@@ -3,7 +3,3 @@ export interface Repository {
     owner: string,
     languages: string[]
 }
-
-export interface RepositoriesData {
-    repositories: Repository[]
-}

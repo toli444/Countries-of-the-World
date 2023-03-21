@@ -190,7 +190,8 @@ select {
 }
 
 input,
-select {
+select,
+.input-skeleton {
   box-shadow:inset .25rem .25rem 0 #ddd
 }
 
@@ -200,7 +201,8 @@ select:focus {
 }
 
 input[type="text"],
-select {
+select,
+.input-skeleton {
   width: 100%;
   font-size: inherit;
   font-family: var(--font-mono);

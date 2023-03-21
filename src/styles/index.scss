@@ -8,10 +8,15 @@ mark {
   background-color: var(--color-yellow);
 }
 
-label {
+label,
+.label-skeleton {
   display: block;
   font-weight: 700;
   font-family: var(--font-mono);
+}
+
+.label-skeleton {
+  visibility: hidden;
 }
 
 ul {
@@ -62,7 +67,6 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: var(--space-xs-s);
-  border: var(--border-thin) solid var(--color-dark);
   gap: 16px;
 
   dt {
@@ -72,6 +76,10 @@ nav {
 }
 
 .repositories-list {
+  li {
+    border: var(--border-thin) solid var(--color-dark);
+  }
+
   li + li {
     margin-top: var(--space-m-l);
   }

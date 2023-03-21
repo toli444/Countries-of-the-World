@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import { useRouteLoaderData, useSearchParams } from "react-router-dom";
-import {RepositoriesData} from "../types/Repository";
+import React from 'react';
+import {useSearchParams} from "react-router-dom";
+import {useRepositories} from "./root";
 
 function getHighlightedText(text: string, highlight: string) {
     const parts = text.split(new RegExp(`(${highlight})`, "gi"));
@@ -16,9 +16,9 @@ function getHighlightedText(text: string, highlight: string) {
 }
 
 function List() {
-    const { repositories } = useRouteLoaderData('root') as RepositoriesData;
+    const repositories = useRepositories();
     const [searchParams, setSearchParams] = useSearchParams();
-    const [ownerFilter, setOwnerFilter] = useState(searchParams.get('owner') || '');
+    const ownerFilter = searchParams.get('owner') || '';
     const filteredRepositories = repositories.filter(repo => repo.owner.includes(ownerFilter));
 
     return (
@@ -31,10 +31,7 @@ function List() {
                         type="text"
                         placeholder="type query"
                         value={ownerFilter}
-                        onChange={e => {
-                            setOwnerFilter(e.target.value);
-                            setSearchParams({ owner: e.target.value });
-                        }}
+                        onChange={e => setSearchParams({ owner: e.target.value })}
                     />
                 </div>
             </form>

@@ -9,11 +9,24 @@ import reportWebVitals from './reportWebVitals';
 import {
     createBrowserRouter,
     RouterProvider,
+    defer,
 } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+async function fetchRepositories() {
+    const response = await fetch("/api/repos.json");
+
+    if (!response.ok) {
+        throw new Error("Could not fetch project");
+    }
+
+    const { repositories } = await response.json();
+
+    return repositories;
+}
 
 const router = createBrowserRouter([
     {
@@ -22,22 +35,19 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
         id: "root",
         loader: async () => {
-            const res = await fetch("/api/repos.json")
-
-            if (!res.ok) {
-                throw new Error("Couldn't load repositories");
-            }
-
-            return res;
+            return defer({ repositories: fetchRepositories() });
+        },
+        shouldRevalidate: () => {
+            return false;
         },
         children: [
             {
                 path: "/",
-                element: <List />
+                element: <List />,
             },
             {
                 path: "by-owner",
-                element: <Grouped />
+                element: <Grouped />,
             }
         ],
     },

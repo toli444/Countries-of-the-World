@@ -6,7 +6,7 @@ describe('General', () => {
   });
 
   it('grouped view successfully loads', () => {
-    cy.visit('/');
+    cy.visit('/by-owner');
 
     cy.get('h1').should('contain', 'Repositories');
   });

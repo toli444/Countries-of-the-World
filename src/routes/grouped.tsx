@@ -1,12 +1,12 @@
-import React, {useState, useMemo} from 'react';
-import {useRouteLoaderData, useSearchParams} from "react-router-dom";
-import {RepositoriesData} from "../types/Repository";
+import React, {useMemo} from 'react';
+import {useSearchParams} from "react-router-dom";
+import {useRepositories} from "./root";
 import groupBy from "lodash.groupby";
 
 function Grouped() {
+    const repositories = useRepositories();
     const [searchParams, setSearchParams] = useSearchParams();
-    const [languageFilter, setLanguageFilter] = useState(searchParams.get('lang') || '');
-    const {repositories} = useRouteLoaderData('root') as RepositoriesData;
+    const languageFilter = searchParams.get('lang') || '';
     const languages = useMemo(
         () => Array.from(new Set(repositories.flatMap(r => r.languages))),
         [repositories]
@@ -23,10 +23,7 @@ function Grouped() {
                     <label htmlFor="filter-by-language-select">Filter by language</label>
                     <select
                         id="filter-by-language-select"
-                        value={languageFilter} onChange={e => {
-                            setLanguageFilter(e.target.value);
-                            setSearchParams({ lang: e.target.value})
-                        }}
+                        value={languageFilter} onChange={e => setSearchParams({ lang: e.target.value})}
                     >
                         <option value="">Choose a language</option>
                         {languages.map(l => (
