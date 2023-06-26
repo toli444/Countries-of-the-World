@@ -1,59 +1,58 @@
 import React from 'react';
 import {useSearchParams} from "react-router-dom";
-import {useRepositories} from "./root";
+import { ViewportList } from 'react-viewport-list';
+import {useCountries} from "./root";
+import FilterPanel from "../components/filter-panel";
+import memoize from "../utils/memoize";
+import getHighlightedText from "../utils/getHighlightedText";
+import normalizeStringForSearch from "../utils/normalizeStringForSearch";
+import {Country} from "../types/Country";
 
-function getHighlightedText(text: string, highlight: string) {
-    const parts = text.split(new RegExp(`(${highlight})`, "gi"));
-    return parts.map((part: string, index: number) => (
-        <React.Fragment key={index}>
-            {part === highlight ? (
-                <mark>{part}</mark>
-            ) : (
-                part
-            )}
-        </React.Fragment>
-    ));
-}
+const getCountriesForSearch = memoize((countries: Country[]) => {
+    return countries.map(c => ({ ...c, searchString: normalizeStringForSearch(c.name) }))
+});
 
 function List() {
-    const repositories = useRepositories();
+    const countries = useCountries();
     const [searchParams, setSearchParams] = useSearchParams();
-    const ownerFilter = searchParams.get('owner') || '';
-    const filteredRepositories = repositories.filter(repo => repo.owner.includes(ownerFilter));
+    const countriesForSearch = getCountriesForSearch(countries);
+    const nameFilterValue = searchParams.get('name') || '';
+    const filteredCountries = countriesForSearch.filter(c => c.searchString.includes(normalizeStringForSearch(nameFilterValue)));
 
     return (
-        <main className="main">
-            <form className="filter-panel">
-                <div className="filter-panel-content">
-                    <label htmlFor="filter-by-owner-input">Filter by owner</label>
-                    <input
-                        id="filter-by-owner-input"
-                        type="text"
-                        placeholder="type query"
-                        value={ownerFilter}
-                        onChange={e => setSearchParams({ owner: e.target.value })}
-                    />
-                </div>
-            </form>
-            <div className="repositories-list">
-                {filteredRepositories.length ? (
+        <main>
+            <FilterPanel label="Filter by name" htmlFor="filter-by-name-input">
+                <input
+                    id="filter-by-name-input"
+                    type="text"
+                    placeholder="type name"
+                    value={nameFilterValue}
+                    onChange={e => setSearchParams({ name: e.target.value })}
+                />
+            </FilterPanel>
+            <div className="countries-list">
+                {filteredCountries.length ? (
                     <ul>
-                        {filteredRepositories.map(repo => (
-                            <li data-testid="repo-info" key={repo.name}>
-                                <dl className="repository-info">
-                                    <dt>Name</dt>
-                                    <dd data-testid="repo-name">{repo.name}</dd>
-                                    <dt>Owner</dt>
-                                    <dd data-testid="repo-owner">{getHighlightedText(repo.owner, ownerFilter)}</dd>
-                                    <dt>Languages</dt>
-                                    <dd data-testid="repo-languages">{repo.languages.join(', ')}</dd>
-                                </dl>
-                            </li>
-                        ))}
+                        <ViewportList
+                            items={filteredCountries}
+                            initialPrerender={5}
+                            renderSpacer={({ ref, style }) => <li ref={ref} style={style} role="presentation" />}
+                        >
+                            {(country, index) => (
+                                <li data-testid="country-info" key={country.name} aria-setsize={filteredCountries.length} aria-posinset={index}>
+                                    <dl className="country-info">
+                                        <dt>Name</dt>
+                                        <dd data-testid="country-name">{getHighlightedText(country.name, nameFilterValue)}</dd>
+                                        <dt>Continent</dt>
+                                        <dd data-testid="country-owner">{country.continent}</dd>
+                                        <dt>Languages</dt>
+                                        <dd data-testid="country-languages">{country.languages.join(', ')}</dd>
+                                    </dl>
+                                </li>
+                            )}
+                        </ViewportList>
                     </ul>
-                ) : <p data-testid="no-results-message">
-                    No repositories match the specified owner name
-                </p>}
+                ) : <p data-testid="no-results-message">No countries match the specified name.</p>}
             </div>
         </main>
     );

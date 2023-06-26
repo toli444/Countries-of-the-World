@@ -15,16 +15,16 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-async function fetchRepositories() {
-    const response = await fetch("/api/repos.json");
+async function fetchCountries() {
+    const response = await fetch("/api/countries.json");
 
     if (!response.ok) {
-        throw new Error("Could not fetch project");
+        throw new Error("Could not fetch countries");
     }
 
-    const { repositories } = await response.json();
+    const { countries } = await response.json();
 
-    return repositories;
+    return countries;
 }
 
 const router = createBrowserRouter([
@@ -34,11 +34,9 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
         id: "root",
         loader: async () => {
-            return defer({ repositories: fetchRepositories() });
+            return defer({ countries: fetchCountries() });
         },
-        shouldRevalidate: () => {
-            return false;
-        },
+        shouldRevalidate: () => false,
         children: [
             {
                 path: "/",

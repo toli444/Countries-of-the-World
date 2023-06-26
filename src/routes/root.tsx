@@ -1,49 +1,21 @@
 import React, { Suspense } from 'react';
 import { Outlet, Await, NavLink, useLoaderData, useOutletContext } from "react-router-dom";
-import {Repository} from "../types/Repository";
+import {Country} from "../types/Country";
+import Skeleton from "../components/app-skeleton";
 
-export function useRepositories() {
-    return useOutletContext<Repository[]>();
-}
-
-function Skeleton() {
-    return (<main className="main">
-        <div className="filter-panel">
-            <div className="filter-panel-content">
-                <div className="label-skeleton">Loading</div>
-                <div className="input-skeleton">
-                    Loading...
-                </div>
-            </div>
-        </div>
-        <div className="repositories-list">
-            <ul role="presentation">
-                {[1, 2, 3].map(repo => (
-                    <li data-testid="repo-info" key={repo}>
-                        <dl style={{visibility: 'hidden'}} className="repository-info">
-                            <dt>Name</dt>
-                            <dd></dd>
-                            <dt>Owner</dt>
-                            <dd></dd>
-                            <dt>Languages</dt>
-                            <dd></dd>
-                        </dl>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    </main>)
+export function useCountries() {
+    return useOutletContext<Country[]>();
 }
 
 function Main() {
-    const { repositories } = useLoaderData() as { repositories: Promise<any> };
+    const { countries } = useLoaderData() as { countries: Promise<Country[]> };
 
     return (
         <Suspense fallback={<Skeleton />}>
             <Await
-                resolve={repositories}
-                children={(resolvedRepositories) => (
-                    <Outlet context={resolvedRepositories}/>
+                resolve={countries}
+                children={resolvedCountries => (
+                    <Outlet context={resolvedCountries}/>
                 )}
             />
         </Suspense>
@@ -51,26 +23,32 @@ function Main() {
 }
 
 function Root() {
-    return (<>
-        <header>
-            <h1>Repositories</h1>
-        </header>
-        <nav>
-            View:
-            <ul>
-                <li>
-                    <NavLink to={`/`}>List</NavLink>
-                </li>
-                <li>
-                    <NavLink to={`/by-owner`}>Grouped</NavLink>
-                </li>
-            </ul>
-        </nav>
-        <Main />
-        <footer>
-            <p>2023</p>
-        </footer>
-    </>);
+    return (
+        <div className="page">
+            <div>
+            <header>
+                <h1>Countries 🌍</h1>
+            </header>
+                <nav>
+                    View:
+                    <ul>
+                        <li>
+                            <NavLink to="/">List</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/by-owner">Grouped</NavLink>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <Main />
+            <div>
+                <footer>
+                    <p>Project author: Anatoli Semianiaka.</p>
+                </footer>
+            </div>
+        </div>
+    );
 }
 
 export default Root;

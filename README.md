@@ -1,6 +1,6 @@
-# Repositories Display App
+# Countries Display App
 
-Web app that allows you to view repositories with their owners and applied languages and to filter the shown repos by either owner or applied language.
+Web app to display countries and their languages and continent and to filter the shown countries by either continent or language.
 
 ## Getting started
 

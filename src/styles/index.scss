@@ -28,10 +28,20 @@ ul {
   color: var(--color-light);
 }
 
+.page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
 header,
 footer,
 nav,
-.repositories-list,
+.countries-list,
 .page-error,
 .filter-panel-content {
   max-width: 900px;
@@ -63,7 +73,7 @@ nav {
   }
 }
 
-.repository-info {
+.country-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: var(--space-xs-s);
@@ -75,7 +85,7 @@ nav {
   }
 }
 
-.repositories-list {
+.countries-list {
   li {
     border: var(--border-thin) solid var(--color-dark);
   }
@@ -85,21 +95,25 @@ nav {
   }
 }
 
-.owner-repositories {
+.continent-countries {
   li + li {
     margin-top: var(--space-s-m);
   }
 }
 
-.owner-repositories + .owner-repositories {
+.continent-countries + .continent-countries {
   margin-top: var(--space-m-l);
 }
 
-.owner-name {
+.continent-name {
   font-size: var(--s1);
 
   + ul {
     margin-top: var(--space-s);
   }
+}
+
+li[role="presentation"] + li {
+  margin-top: 0;
 }
 
