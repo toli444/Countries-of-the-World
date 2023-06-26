@@ -2,7 +2,6 @@
   "name": "countries-of-the-world",
   "version": "1.0.0",
   "dependencies": {
-    "@types/lodash.escaperegexp": "^4.1.7",
     "lodash.escaperegexp": "^4.1.2",
     "lodash.groupby": "^4.6.0",
     "react": "^18.2.0",
@@ -22,6 +21,7 @@
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.5.2",
+    "@types/lodash.escaperegexp": "^4.1.7",
     "@types/lodash.groupby": "^4.6.7",
     "@types/node": "^20.3.1",
     "@types/react": "^18.2.14",

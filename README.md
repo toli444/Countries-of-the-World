@@ -1,12 +1,13 @@
-# Countries Display App
+# Countries of the World 🌍
 
-Web app to display countries and their languages and continent and to filter the shown countries by either continent or language.
+Developer playground and also a website that makes it easy to see all the important information for each country in the world.
+You can filter by country name or spoken languages, and view countries as a list or grouped by continent.
 
 ## Getting started
 
 1. Run `npm install` to install packages.
 3. Run `npm run start` which runs the app in the development mode.
-4. Open [http://localhost:6060](http://localhost:6060) to view it in the browser.
+4. Open [http://localhost:7000](http://localhost:7000) to view it in the browser.
 
 ## Run tests
 
@@ -15,4 +16,4 @@ Web app to display countries and their languages and continent and to filter the
 
 ## Build
 
-1. `npm run build` builds the app for production to the `build` folder.
+1. `npm run build` builds the app for production to the `dist` folder.
