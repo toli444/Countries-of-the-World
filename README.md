@@ -6,8 +6,8 @@ You can filter by country name or spoken languages, and view countries as a list
 ## Getting started
 
 1. Run `npm install` to install packages.
-3. Run `npm run start` which runs the app in the development mode.
-4. Open [http://localhost:7000](http://localhost:7000) to view it in the browser.
+2. Run `npm run start` which runs the app in the development mode.
+3. Open [http://localhost:7000](http://localhost:7000) to view it in the browser.
 
 ## Run tests
 
