@@ -6,7 +6,7 @@ import ErrorPage from "./routes/error";
 import List from "./routes/list";
 import Grouped from "./routes/grouped";
 import {
-    createBrowserRouter,
+    createHashRouter,
     RouterProvider,
     defer,
 } from "react-router-dom";
@@ -27,7 +27,7 @@ async function fetchCountries() {
     return countries;
 }
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: <Root />,
