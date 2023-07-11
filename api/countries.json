@@ -1,0 +1,1870 @@
+{
+  "countries": [
+    {
+      "name": "Andorra",
+      "continent": "Europe",
+      "languages": [
+        "Catalan"
+      ]
+    },
+    {
+      "name": "United Arab Emirates",
+      "continent": "Asia",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Afghanistan",
+      "continent": "Asia",
+      "languages": [
+        "Pashto",
+        "Uzbek",
+        "Turkmen"
+      ]
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Anguilla",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Albania",
+      "continent": "Europe",
+      "languages": [
+        "Albanian"
+      ]
+    },
+    {
+      "name": "Armenia",
+      "continent": "Asia",
+      "languages": [
+        "Armenian",
+        "Russian"
+      ]
+    },
+    {
+      "name": "Angola",
+      "continent": "Africa",
+      "languages": [
+        "Portuguese"
+      ]
+    },
+    {
+      "name": "Antarctica",
+      "continent": "Antarctica",
+      "languages": []
+    },
+    {
+      "name": "Argentina",
+      "continent": "South America",
+      "languages": [
+        "Spanish",
+        "Guarani"
+      ]
+    },
+    {
+      "name": "American Samoa",
+      "continent": "Oceania",
+      "languages": [
+        "English",
+        "Samoan"
+      ]
+    },
+    {
+      "name": "Austria",
+      "continent": "Europe",
+      "languages": [
+        "German"
+      ]
+    },
+    {
+      "name": "Australia",
+      "continent": "Oceania",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Aruba",
+      "continent": "North America",
+      "languages": [
+        "Dutch",
+        "Panjabi / Punjabi"
+      ]
+    },
+    {
+      "name": "Åland",
+      "continent": "Europe",
+      "languages": [
+        "Swedish"
+      ]
+    },
+    {
+      "name": "Azerbaijan",
+      "continent": "Asia",
+      "languages": [
+        "Azerbaijani"
+      ]
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "continent": "Europe",
+      "languages": [
+        "Bosnian",
+        "Croatian",
+        "Serbian"
+      ]
+    },
+    {
+      "name": "Barbados",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Bangladesh",
+      "continent": "Asia",
+      "languages": [
+        "Bengali"
+      ]
+    },
+    {
+      "name": "Belgium",
+      "continent": "Europe",
+      "languages": [
+        "Dutch",
+        "French",
+        "German"
+      ]
+    },
+    {
+      "name": "Burkina Faso",
+      "continent": "Africa",
+      "languages": [
+        "French",
+        "Peul"
+      ]
+    },
+    {
+      "name": "Bulgaria",
+      "continent": "Europe",
+      "languages": [
+        "Bulgarian"
+      ]
+    },
+    {
+      "name": "Bahrain",
+      "continent": "Asia",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Burundi",
+      "continent": "Africa",
+      "languages": [
+        "French",
+        "Kirundi"
+      ]
+    },
+    {
+      "name": "Benin",
+      "continent": "Africa",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Saint Barthélemy",
+      "continent": "North America",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Bermuda",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Brunei",
+      "continent": "Asia",
+      "languages": [
+        "Malay"
+      ]
+    },
+    {
+      "name": "Bolivia",
+      "continent": "South America",
+      "languages": [
+        "Spanish",
+        "Aymara",
+        "Quechua"
+      ]
+    },
+    {
+      "name": "Bonaire",
+      "continent": "North America",
+      "languages": [
+        "Dutch"
+      ]
+    },
+    {
+      "name": "Brazil",
+      "continent": "South America",
+      "languages": [
+        "Portuguese"
+      ]
+    },
+    {
+      "name": "Bahamas",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Bhutan",
+      "continent": "Asia",
+      "languages": [
+        "Dzongkha"
+      ]
+    },
+    {
+      "name": "Bouvet Island",
+      "continent": "Antarctica",
+      "languages": [
+        "Norwegian",
+        "Norwegian Bokmål",
+        "Norwegian Nynorsk"
+      ]
+    },
+    {
+      "name": "Botswana",
+      "continent": "Africa",
+      "languages": [
+        "English",
+        "Tswana"
+      ]
+    },
+    {
+      "name": "Belarus",
+      "continent": "Europe",
+      "languages": [
+        "Belarusian",
+        "Russian"
+      ]
+    },
+    {
+      "name": "Belize",
+      "continent": "North America",
+      "languages": [
+        "English",
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Canada",
+      "continent": "North America",
+      "languages": [
+        "English",
+        "French"
+      ]
+    },
+    {
+      "name": "Cocos [Keeling] Islands",
+      "continent": "Asia",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Democratic Republic of the Congo",
+      "continent": "Africa",
+      "languages": [
+        "French",
+        "Lingala",
+        "Kongo",
+        "Swahili",
+        "Luba-Katanga"
+      ]
+    },
+    {
+      "name": "Central African Republic",
+      "continent": "Africa",
+      "languages": [
+        "French",
+        "Sango"
+      ]
+    },
+    {
+      "name": "Republic of the Congo",
+      "continent": "Africa",
+      "languages": [
+        "French",
+        "Lingala"
+      ]
+    },
+    {
+      "name": "Switzerland",
+      "continent": "Europe",
+      "languages": [
+        "German",
+        "French",
+        "Italian"
+      ]
+    },
+    {
+      "name": "Ivory Coast",
+      "continent": "Africa",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Cook Islands",
+      "continent": "Oceania",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Chile",
+      "continent": "South America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Cameroon",
+      "continent": "Africa",
+      "languages": [
+        "English",
+        "French"
+      ]
+    },
+    {
+      "name": "China",
+      "continent": "Asia",
+      "languages": [
+        "Chinese"
+      ]
+    },
+    {
+      "name": "Colombia",
+      "continent": "South America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Costa Rica",
+      "continent": "North America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Cuba",
+      "continent": "North America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Cape Verde",
+      "continent": "Africa",
+      "languages": [
+        "Portuguese"
+      ]
+    },
+    {
+      "name": "Curacao",
+      "continent": "North America",
+      "languages": [
+        "Dutch",
+        "Panjabi / Punjabi",
+        "English"
+      ]
+    },
+    {
+      "name": "Christmas Island",
+      "continent": "Asia",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Cyprus",
+      "continent": "Europe",
+      "languages": [
+        "Greek",
+        "Turkish",
+        "Armenian"
+      ]
+    },
+    {
+      "name": "Czech Republic",
+      "continent": "Europe",
+      "languages": [
+        "Czech"
+      ]
+    },
+    {
+      "name": "Germany",
+      "continent": "Europe",
+      "languages": [
+        "German"
+      ]
+    },
+    {
+      "name": "Djibouti",
+      "continent": "Africa",
+      "languages": [
+        "French",
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Denmark",
+      "continent": "Europe",
+      "languages": [
+        "Danish"
+      ]
+    },
+    {
+      "name": "Dominica",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Dominican Republic",
+      "continent": "North America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Algeria",
+      "continent": "Africa",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Ecuador",
+      "continent": "South America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Estonia",
+      "continent": "Europe",
+      "languages": [
+        "Estonian"
+      ]
+    },
+    {
+      "name": "Egypt",
+      "continent": "Africa",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Western Sahara",
+      "continent": "Africa",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Eritrea",
+      "continent": "Africa",
+      "languages": [
+        "Tigrinya",
+        "Arabic",
+        "English"
+      ]
+    },
+    {
+      "name": "Spain",
+      "continent": "Europe",
+      "languages": [
+        "Spanish",
+        "Basque",
+        "Catalan",
+        "Galician",
+        "Occitan"
+      ]
+    },
+    {
+      "name": "Ethiopia",
+      "continent": "Africa",
+      "languages": [
+        "Amharic"
+      ]
+    },
+    {
+      "name": "Finland",
+      "continent": "Europe",
+      "languages": [
+        "Finnish",
+        "Swedish"
+      ]
+    },
+    {
+      "name": "Fiji",
+      "continent": "Oceania",
+      "languages": [
+        "English",
+        "Fijian",
+        "Hindi",
+        "Urdu"
+      ]
+    },
+    {
+      "name": "Falkland Islands",
+      "continent": "South America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Micronesia",
+      "continent": "Oceania",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Faroe Islands",
+      "continent": "Europe",
+      "languages": [
+        "Faroese"
+      ]
+    },
+    {
+      "name": "France",
+      "continent": "Europe",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Gabon",
+      "continent": "Africa",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "United Kingdom",
+      "continent": "Europe",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Grenada",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Georgia",
+      "continent": "Asia",
+      "languages": [
+        "Georgian"
+      ]
+    },
+    {
+      "name": "French Guiana",
+      "continent": "South America",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Guernsey",
+      "continent": "Europe",
+      "languages": [
+        "English",
+        "French"
+      ]
+    },
+    {
+      "name": "Ghana",
+      "continent": "Africa",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Gibraltar",
+      "continent": "Europe",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Greenland",
+      "continent": "North America",
+      "languages": [
+        "Greenlandic"
+      ]
+    },
+    {
+      "name": "Gambia",
+      "continent": "Africa",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Guinea",
+      "continent": "Africa",
+      "languages": [
+        "French",
+        "Peul"
+      ]
+    },
+    {
+      "name": "Guadeloupe",
+      "continent": "North America",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Equatorial Guinea",
+      "continent": "Africa",
+      "languages": [
+        "Spanish",
+        "French"
+      ]
+    },
+    {
+      "name": "Greece",
+      "continent": "Europe",
+      "languages": [
+        "Greek"
+      ]
+    },
+    {
+      "name": "South Georgia and the South Sandwich Islands",
+      "continent": "Antarctica",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Guatemala",
+      "continent": "North America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Guam",
+      "continent": "Oceania",
+      "languages": [
+        "English",
+        "Chamorro",
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Guinea-Bissau",
+      "continent": "Africa",
+      "languages": [
+        "Portuguese"
+      ]
+    },
+    {
+      "name": "Guyana",
+      "continent": "South America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Hong Kong",
+      "continent": "Asia",
+      "languages": [
+        "Chinese",
+        "English"
+      ]
+    },
+    {
+      "name": "Heard Island and McDonald Islands",
+      "continent": "Antarctica",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Honduras",
+      "continent": "North America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Croatia",
+      "continent": "Europe",
+      "languages": [
+        "Croatian"
+      ]
+    },
+    {
+      "name": "Haiti",
+      "continent": "North America",
+      "languages": [
+        "French",
+        "Haitian"
+      ]
+    },
+    {
+      "name": "Hungary",
+      "continent": "Europe",
+      "languages": [
+        "Hungarian"
+      ]
+    },
+    {
+      "name": "Indonesia",
+      "continent": "Asia",
+      "languages": [
+        "Indonesian"
+      ]
+    },
+    {
+      "name": "Ireland",
+      "continent": "Europe",
+      "languages": [
+        "Irish",
+        "English"
+      ]
+    },
+    {
+      "name": "Israel",
+      "continent": "Asia",
+      "languages": [
+        "Hebrew",
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Isle of Man",
+      "continent": "Europe",
+      "languages": [
+        "English",
+        "Manx"
+      ]
+    },
+    {
+      "name": "India",
+      "continent": "Asia",
+      "languages": [
+        "Hindi",
+        "English"
+      ]
+    },
+    {
+      "name": "British Indian Ocean Territory",
+      "continent": "Asia",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Iraq",
+      "continent": "Asia",
+      "languages": [
+        "Arabic",
+        "Kurdish"
+      ]
+    },
+    {
+      "name": "Iran",
+      "continent": "Asia",
+      "languages": [
+        "Persian"
+      ]
+    },
+    {
+      "name": "Iceland",
+      "continent": "Europe",
+      "languages": [
+        "Icelandic"
+      ]
+    },
+    {
+      "name": "Italy",
+      "continent": "Europe",
+      "languages": [
+        "Italian"
+      ]
+    },
+    {
+      "name": "Jersey",
+      "continent": "Europe",
+      "languages": [
+        "English",
+        "French"
+      ]
+    },
+    {
+      "name": "Jamaica",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Jordan",
+      "continent": "Asia",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Japan",
+      "continent": "Asia",
+      "languages": [
+        "Japanese"
+      ]
+    },
+    {
+      "name": "Kenya",
+      "continent": "Africa",
+      "languages": [
+        "English",
+        "Swahili"
+      ]
+    },
+    {
+      "name": "Kyrgyzstan",
+      "continent": "Asia",
+      "languages": [
+        "Kyrgyz",
+        "Russian"
+      ]
+    },
+    {
+      "name": "Cambodia",
+      "continent": "Asia",
+      "languages": [
+        "Cambodian"
+      ]
+    },
+    {
+      "name": "Kiribati",
+      "continent": "Oceania",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Comoros",
+      "continent": "Africa",
+      "languages": [
+        "Arabic",
+        "French"
+      ]
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "North Korea",
+      "continent": "Asia",
+      "languages": [
+        "Korean"
+      ]
+    },
+    {
+      "name": "South Korea",
+      "continent": "Asia",
+      "languages": [
+        "Korean"
+      ]
+    },
+    {
+      "name": "Kuwait",
+      "continent": "Asia",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Cayman Islands",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Kazakhstan",
+      "continent": "Asia",
+      "languages": [
+        "Kazakh",
+        "Russian"
+      ]
+    },
+    {
+      "name": "Laos",
+      "continent": "Asia",
+      "languages": [
+        "Laotian"
+      ]
+    },
+    {
+      "name": "Lebanon",
+      "continent": "Asia",
+      "languages": [
+        "Arabic",
+        "French"
+      ]
+    },
+    {
+      "name": "Saint Lucia",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Liechtenstein",
+      "continent": "Europe",
+      "languages": [
+        "German"
+      ]
+    },
+    {
+      "name": "Sri Lanka",
+      "continent": "Asia",
+      "languages": [
+        "Sinhalese",
+        "Tamil"
+      ]
+    },
+    {
+      "name": "Liberia",
+      "continent": "Africa",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Lesotho",
+      "continent": "Africa",
+      "languages": [
+        "English",
+        "Southern Sotho"
+      ]
+    },
+    {
+      "name": "Lithuania",
+      "continent": "Europe",
+      "languages": [
+        "Lithuanian"
+      ]
+    },
+    {
+      "name": "Luxembourg",
+      "continent": "Europe",
+      "languages": [
+        "French",
+        "German",
+        "Luxembourgish"
+      ]
+    },
+    {
+      "name": "Latvia",
+      "continent": "Europe",
+      "languages": [
+        "Latvian"
+      ]
+    },
+    {
+      "name": "Libya",
+      "continent": "Africa",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Morocco",
+      "continent": "Africa",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Monaco",
+      "continent": "Europe",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Moldova",
+      "continent": "Europe",
+      "languages": [
+        "Romanian"
+      ]
+    },
+    {
+      "name": "Montenegro",
+      "continent": "Europe",
+      "languages": [
+        "Serbian",
+        "Bosnian",
+        "Albanian",
+        "Croatian"
+      ]
+    },
+    {
+      "name": "Saint Martin",
+      "continent": "North America",
+      "languages": [
+        "English",
+        "French",
+        "Dutch"
+      ]
+    },
+    {
+      "name": "Madagascar",
+      "continent": "Africa",
+      "languages": [
+        "French",
+        "Malagasy"
+      ]
+    },
+    {
+      "name": "Marshall Islands",
+      "continent": "Oceania",
+      "languages": [
+        "English",
+        "Marshallese"
+      ]
+    },
+    {
+      "name": "North Macedonia",
+      "continent": "Europe",
+      "languages": [
+        "Macedonian"
+      ]
+    },
+    {
+      "name": "Mali",
+      "continent": "Africa",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Myanmar [Burma]",
+      "continent": "Asia",
+      "languages": [
+        "Burmese"
+      ]
+    },
+    {
+      "name": "Mongolia",
+      "continent": "Asia",
+      "languages": [
+        "Mongolian"
+      ]
+    },
+    {
+      "name": "Macao",
+      "continent": "Asia",
+      "languages": [
+        "Chinese",
+        "Portuguese"
+      ]
+    },
+    {
+      "name": "Northern Mariana Islands",
+      "continent": "Oceania",
+      "languages": [
+        "English",
+        "Chamorro"
+      ]
+    },
+    {
+      "name": "Martinique",
+      "continent": "North America",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Mauritania",
+      "continent": "Africa",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Montserrat",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Malta",
+      "continent": "Europe",
+      "languages": [
+        "Maltese",
+        "English"
+      ]
+    },
+    {
+      "name": "Mauritius",
+      "continent": "Africa",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Maldives",
+      "continent": "Asia",
+      "languages": [
+        "Divehi"
+      ]
+    },
+    {
+      "name": "Malawi",
+      "continent": "Africa",
+      "languages": [
+        "English",
+        "Chichewa"
+      ]
+    },
+    {
+      "name": "Mexico",
+      "continent": "North America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Malaysia",
+      "continent": "Asia",
+      "languages": [
+        "Malay"
+      ]
+    },
+    {
+      "name": "Mozambique",
+      "continent": "Africa",
+      "languages": [
+        "Portuguese"
+      ]
+    },
+    {
+      "name": "Namibia",
+      "continent": "Africa",
+      "languages": [
+        "English",
+        "Afrikaans"
+      ]
+    },
+    {
+      "name": "New Caledonia",
+      "continent": "Oceania",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Niger",
+      "continent": "Africa",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Norfolk Island",
+      "continent": "Oceania",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Nigeria",
+      "continent": "Africa",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Nicaragua",
+      "continent": "North America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Netherlands",
+      "continent": "Europe",
+      "languages": [
+        "Dutch"
+      ]
+    },
+    {
+      "name": "Norway",
+      "continent": "Europe",
+      "languages": [
+        "Norwegian",
+        "Norwegian Bokmål",
+        "Norwegian Nynorsk"
+      ]
+    },
+    {
+      "name": "Nepal",
+      "continent": "Asia",
+      "languages": [
+        "Nepali"
+      ]
+    },
+    {
+      "name": "Nauru",
+      "continent": "Oceania",
+      "languages": [
+        "English",
+        "Nauruan"
+      ]
+    },
+    {
+      "name": "Niue",
+      "continent": "Oceania",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "New Zealand",
+      "continent": "Oceania",
+      "languages": [
+        "English",
+        "Maori"
+      ]
+    },
+    {
+      "name": "Oman",
+      "continent": "Asia",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Panama",
+      "continent": "North America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Peru",
+      "continent": "South America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "French Polynesia",
+      "continent": "Oceania",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Papua New Guinea",
+      "continent": "Oceania",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Philippines",
+      "continent": "Asia",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Pakistan",
+      "continent": "Asia",
+      "languages": [
+        "English",
+        "Urdu"
+      ]
+    },
+    {
+      "name": "Poland",
+      "continent": "Europe",
+      "languages": [
+        "Polish"
+      ]
+    },
+    {
+      "name": "Saint Pierre and Miquelon",
+      "continent": "North America",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Pitcairn Islands",
+      "continent": "Oceania",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Puerto Rico",
+      "continent": "North America",
+      "languages": [
+        "Spanish",
+        "English"
+      ]
+    },
+    {
+      "name": "Palestine",
+      "continent": "Asia",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Portugal",
+      "continent": "Europe",
+      "languages": [
+        "Portuguese"
+      ]
+    },
+    {
+      "name": "Palau",
+      "continent": "Oceania",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Paraguay",
+      "continent": "South America",
+      "languages": [
+        "Spanish",
+        "Guarani"
+      ]
+    },
+    {
+      "name": "Qatar",
+      "continent": "Asia",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Réunion",
+      "continent": "Africa",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Romania",
+      "continent": "Europe",
+      "languages": [
+        "Romanian"
+      ]
+    },
+    {
+      "name": "Serbia",
+      "continent": "Europe",
+      "languages": [
+        "Serbian"
+      ]
+    },
+    {
+      "name": "Russia",
+      "continent": "Europe",
+      "languages": [
+        "Russian"
+      ]
+    },
+    {
+      "name": "Rwanda",
+      "continent": "Africa",
+      "languages": [
+        "Rwandi",
+        "English",
+        "French"
+      ]
+    },
+    {
+      "name": "Saudi Arabia",
+      "continent": "Asia",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Solomon Islands",
+      "continent": "Oceania",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Seychelles",
+      "continent": "Africa",
+      "languages": [
+        "French",
+        "English"
+      ]
+    },
+    {
+      "name": "Sudan",
+      "continent": "Africa",
+      "languages": [
+        "Arabic",
+        "English"
+      ]
+    },
+    {
+      "name": "Sweden",
+      "continent": "Europe",
+      "languages": [
+        "Swedish"
+      ]
+    },
+    {
+      "name": "Singapore",
+      "continent": "Asia",
+      "languages": [
+        "English",
+        "Malay",
+        "Tamil",
+        "Chinese"
+      ]
+    },
+    {
+      "name": "Saint Helena",
+      "continent": "Africa",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Slovenia",
+      "continent": "Europe",
+      "languages": [
+        "Slovenian"
+      ]
+    },
+    {
+      "name": "Svalbard and Jan Mayen",
+      "continent": "Europe",
+      "languages": [
+        "Norwegian"
+      ]
+    },
+    {
+      "name": "Slovakia",
+      "continent": "Europe",
+      "languages": [
+        "Slovak"
+      ]
+    },
+    {
+      "name": "Sierra Leone",
+      "continent": "Africa",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "San Marino",
+      "continent": "Europe",
+      "languages": [
+        "Italian"
+      ]
+    },
+    {
+      "name": "Senegal",
+      "continent": "Africa",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Somalia",
+      "continent": "Africa",
+      "languages": [
+        "Somalia",
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Suriname",
+      "continent": "South America",
+      "languages": [
+        "Dutch"
+      ]
+    },
+    {
+      "name": "South Sudan",
+      "continent": "Africa",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "São Tomé and Príncipe",
+      "continent": "Africa",
+      "languages": [
+        "Portuguese"
+      ]
+    },
+    {
+      "name": "El Salvador",
+      "continent": "North America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Sint Maarten",
+      "continent": "North America",
+      "languages": [
+        "Dutch",
+        "English"
+      ]
+    },
+    {
+      "name": "Syria",
+      "continent": "Asia",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Swaziland",
+      "continent": "Africa",
+      "languages": [
+        "English",
+        "Swati"
+      ]
+    },
+    {
+      "name": "Turks and Caicos Islands",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Chad",
+      "continent": "Africa",
+      "languages": [
+        "French",
+        "Arabic"
+      ]
+    },
+    {
+      "name": "French Southern Territories",
+      "continent": "Antarctica",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Togo",
+      "continent": "Africa",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Thailand",
+      "continent": "Asia",
+      "languages": [
+        "Thai"
+      ]
+    },
+    {
+      "name": "Tajikistan",
+      "continent": "Asia",
+      "languages": [
+        "Tajik",
+        "Russian"
+      ]
+    },
+    {
+      "name": "Tokelau",
+      "continent": "Oceania",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "East Timor",
+      "continent": "Oceania",
+      "languages": [
+        "Portuguese"
+      ]
+    },
+    {
+      "name": "Turkmenistan",
+      "continent": "Asia",
+      "languages": [
+        "Turkmen",
+        "Russian"
+      ]
+    },
+    {
+      "name": "Tunisia",
+      "continent": "Africa",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Tonga",
+      "continent": "Oceania",
+      "languages": [
+        "English",
+        "Tonga"
+      ]
+    },
+    {
+      "name": "Turkey",
+      "continent": "Asia",
+      "languages": [
+        "Turkish"
+      ]
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Tuvalu",
+      "continent": "Oceania",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Taiwan",
+      "continent": "Asia",
+      "languages": [
+        "Chinese"
+      ]
+    },
+    {
+      "name": "Tanzania",
+      "continent": "Africa",
+      "languages": [
+        "Swahili",
+        "English"
+      ]
+    },
+    {
+      "name": "Ukraine",
+      "continent": "Europe",
+      "languages": [
+        "Ukrainian"
+      ]
+    },
+    {
+      "name": "Uganda",
+      "continent": "Africa",
+      "languages": [
+        "English",
+        "Swahili"
+      ]
+    },
+    {
+      "name": "U.S. Minor Outlying Islands",
+      "continent": "Oceania",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "United States",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Uruguay",
+      "continent": "South America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "Uzbekistan",
+      "continent": "Asia",
+      "languages": [
+        "Uzbek",
+        "Russian"
+      ]
+    },
+    {
+      "name": "Vatican City",
+      "continent": "Europe",
+      "languages": [
+        "Italian",
+        "Latin"
+      ]
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Venezuela",
+      "continent": "South America",
+      "languages": [
+        "Spanish"
+      ]
+    },
+    {
+      "name": "British Virgin Islands",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "U.S. Virgin Islands",
+      "continent": "North America",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Vietnam",
+      "continent": "Asia",
+      "languages": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "name": "Vanuatu",
+      "continent": "Oceania",
+      "languages": [
+        "Bislama",
+        "English",
+        "French"
+      ]
+    },
+    {
+      "name": "Wallis and Futuna",
+      "continent": "Oceania",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "Samoa",
+      "continent": "Oceania",
+      "languages": [
+        "Samoan",
+        "English"
+      ]
+    },
+    {
+      "name": "Kosovo",
+      "continent": "Europe",
+      "languages": [
+        "Albanian",
+        "Serbian"
+      ]
+    },
+    {
+      "name": "Yemen",
+      "continent": "Asia",
+      "languages": [
+        "Arabic"
+      ]
+    },
+    {
+      "name": "Mayotte",
+      "continent": "Africa",
+      "languages": [
+        "French"
+      ]
+    },
+    {
+      "name": "South Africa",
+      "continent": "Africa",
+      "languages": [
+        "Afrikaans",
+        "English",
+        "South Ndebele",
+        "Southern Sotho",
+        "Swati",
+        "Tswana",
+        "Tsonga",
+        "Venda",
+        "Xhosa",
+        "Zulu"
+      ]
+    },
+    {
+      "name": "Zambia",
+      "continent": "Africa",
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Zimbabwe",
+      "continent": "Africa",
+      "languages": [
+        "English",
+        "Shona",
+        "North Ndebele"
+      ]
+    }
+  ]
+}
