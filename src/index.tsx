@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(
 );
 
 async function fetchCountries() {
-    const response = await fetch("/api/countries.json");
+    const response = await fetch(`${import.meta.env.BASE_URL}/api/countries.json`);
 
     if (!response.ok) {
         throw new Error("Could not fetch countries");
