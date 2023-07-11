@@ -39,7 +39,7 @@ function List() {
                             renderSpacer={({ ref, style }) => <li ref={ref} style={style} role="presentation" />}
                         >
                             {(country, index) => (
-                                <li data-testid="country-info" key={country.name} aria-setsize={filteredCountries.length} aria-posinset={index}>
+                                <li data-testid="country-info" key={country.name} aria-setsize={filteredCountries.length} aria-posinset={index + 1}>
                                     <dl className="country-info">
                                         <dt>Name</dt>
                                         <dd data-testid="country-name">{getHighlightedText(country.name, nameFilterValue)}</dd>
